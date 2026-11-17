@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Daraxtli Do'kon</title>
+<meta name="description" content="Daraxtli Do'kon: tabiat ranglaridagi zamonaviy kiyimlar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SVG belgilar -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="leaf" viewBox="0 0 100 100"><path d="M8 62 C6 24 40 6 92 8 C94 58 62 94 8 62 Z" fill="currentColor"></path><path d="M12 58 C38 48 62 32 84 14" fill="none" stroke="rgba(255,255,255,.45)" stroke-width="2.5" stroke-linecap="round"></path></symbol>
+  <symbol id="g-tee" viewBox="0 0 100 100"><path d="M35 14 L18 24 L8 42 L22 48 L28 40 L28 86 L72 86 L72 40 L78 48 L92 42 L82 24 L65 14 Q50 26 35 14 Z"></path></symbol>
+  <symbol id="g-hoodie" viewBox="0 0 100 100"><path d="M36 14 L16 26 L10 78 L24 80 L30 46 L30 88 L70 88 L70 46 L76 80 L90 78 L84 26 L64 14 Q50 28 36 14 Z M36 14 Q50 2 64 14"></path></symbol>
+  <symbol id="g-trousers" viewBox="0 0 100 100"><path d="M30 10 L70 10 L74 90 L54 90 L50 36 L46 90 L26 90 Z"></path></symbol>
+  <symbol id="g-coat" viewBox="0 0 100 100"><path d="M34 12 L14 24 L8 80 L22 82 L28 44 L28 90 L72 90 L72 44 L78 82 L92 80 L86 24 L66 12 L50 34 Z M50 34 L50 90"></path></symbol>
+  <symbol id="g-dress" viewBox="0 0 100 100"><path d="M38 10 L62 10 L60 34 L78 90 L22 90 L40 34 Z M40 34 L60 34"></path></symbol>
+  <symbol id="g-bag" viewBox="0 0 100 100"><path d="M24 36 H76 L82 90 H18 Z M36 36 V26 Q36 14 50 14 Q64 14 64 26 V36"></path></symbol>
+  <symbol id="g-beanie" viewBox="0 0 100 100"><path d="M26 58 Q26 24 50 24 Q74 24 74 58 Z M22 58 H78 V72 H22 Z M50 24 V16"></path></symbol>
+</svg>
+
+<div class="bg" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span></div>
+
+<!-- Ochilish animatsiyasi -->
+<div class="splash" aria-hidden="true">
+  <div class="splash-core">
+    <svg class="splash-tree" viewBox="0 0 120 120" fill="none">
+      <circle class="t sun" cx="92" cy="26" r="11" pathLength="1" style="--k:0"></circle>
+      <circle class="fillin sunfill" cx="92" cy="26" r="11"></circle>
+      <path class="t trunk" d="M60 110 V70" pathLength="1" style="--k:1"></path>
+      <path class="t trunk" d="M60 92 L46 78" pathLength="1" style="--k:2"></path>
+      <path class="t trunk" d="M60 86 L74 72" pathLength="1" style="--k:2"></path>
+      <circle class="fillin cfill" cx="60" cy="46" r="26"></circle>
+      <circle class="fillin cfill" cx="38" cy="64" r="18"></circle>
+      <circle class="fillin cfill" cx="82" cy="64" r="18"></circle>
+      <circle class="t canopy" cx="60" cy="46" r="26" pathLength="1" style="--k:3"></circle>
+      <circle class="t canopy" cx="38" cy="64" r="18" pathLength="1" style="--k:4"></circle>
+      <circle class="t canopy" cx="82" cy="64" r="18" pathLength="1" style="--k:5"></circle>
+    </svg>
+    <div class="splash-name">
+      <span style="--i:0">D</span><span style="--i:1">A</span><span style="--i:2">R</span><span style="--i:3">A</span><span style="--i:4">X</span><span style="--i:5">T</span><span style="--i:6">L</span><span style="--i:7">I</span>
+    </div>
+    <div class="splash-sub">do'kon</div>
+  </div>
+</div>
+<div class="wipe" aria-hidden="true"></div>
+
+<!-- Sarlavha -->
+<header class="site-header" id="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="#bosh" aria-label="Daraxtli Do'kon, bosh sahifa">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="38" cy="9" r="4.5" fill="#F7C32E"></circle><circle cx="24" cy="19" r="12" fill="#2F7D45"></circle><circle cx="14" cy="27" r="8" fill="#3E9457"></circle><circle cx="34" cy="27" r="8" fill="#256B3A"></circle><rect x="21.5" y="27" width="5" height="15" rx="2.5" fill="#5A3E2B"></rect></svg>
+      <span class="brand-name">Daraxtli<small>do'kon</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Asosiy menyu">
+      <a href="#bosh" data-nav="bosh">Bosh sahifa</a>
+      <a href="#katalog" data-nav="katalog">Katalog</a>
+      <a href="#kolleksiya" data-nav="kolleksiya">Kolleksiyalar</a>
+      <a href="#biz" data-nav="biz">Biz haqimizda</a>
+      <a href="#aksiya" data-nav="aksiya">Aksiya</a>
+      <a href="#aloqa" data-nav="aloqa">Aloqa</a>
+    </nav>
+    <div class="bar-actions">
+      <button class="icon-btn" id="cart-btn" type="button" aria-label="Savatni ochish">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M5 8 H19 L20 21 H4 Z"></path><path d="M9 8 V6.5 A3 3 0 0 1 15 6.5 V8"></path></svg>
+        <span class="badge" id="cart-count">0</span>
+      </button>
+      <button class="icon-btn burger" id="burger" type="button" aria-label="Menyuni ochish" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- 1. BOSH SAHIFA -->
+<section class="view active" id="view-bosh" data-title="Bosh sahifa">
+  <div class="wrap hero">
+    <div class="hero-copy">
+      <span class="pill fade-in" style="--d:0"><i class="dot"></i> Yangi mavsum kolleksiyasi</span>
+      <h1 class="display"><span class="word"><span style="--w:0">Tabiat</span></span> <span class="word"><span style="--w:1">ranglarida</span></span> <span class="word"><span style="--w:2">kiyining.</span></span></h1>
+      <p class="lead fade-in" style="--d:420">Paxta, zig'ir va jundan tikilgan kundalik kiyimlar. Sokin ranglar, qulay andoza, har kuni kiyishga yaraydigan modellar.</p>
+      <div class="btn-row fade-in" style="--d:560">
+        <a class="btn btn-primary" href="#katalog">Katalogga o'tish <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12 H19 M13 6 L19 12 L13 18"></path></svg></a>
+        <a class="btn btn-ghost" href="#kolleksiya">Kolleksiyalar</a>
+      </div>
+    </div>
+    <div class="hero-art fade-in" style="--d:300" aria-hidden="true">
+      <div class="art-sun"></div>
+      <div class="depth t1" style="--z:1.2"><div class="float f1"><div class="tile-art" style="background:#2F7D45;color:#FBF7E8"><svg class="g" viewBox="0 0 100 100"><use href="#g-coat"></use></svg></div></div></div>
+      <div class="depth t2" style="--z:2"><div class="float f2"><div class="tile-art" style="background:#D9CCF7;color:#2B1D14"><svg class="g" viewBox="0 0 100 100"><use href="#g-bag"></use></svg></div></div></div>
+      <div class="depth t3" style="--z:1.6"><div class="float f3"><div class="tile-art" style="background:#F9D96B;color:#2B1D14"><svg class="g" viewBox="0 0 100 100"><use href="#g-tee"></use></svg></div></div></div>
+      <div class="ring"><svg viewBox="0 0 120 120"><defs><path id="circ" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0"></path></defs><text><textPath href="#circ">Tabiiy matolar • Sokin ranglar • Qulay narxlar • </textPath></text></svg></div>
+      <div class="depth l1" style="--z:2.4"><div class="float f2" style="color:#2F7D45"><svg viewBox="0 0 100 100"><use href="#leaf"></use></svg></div></div>
+      <div class="depth l2" style="--z:1.4"><div class="float f3" style="color:#5A3E2B"><svg viewBox="0 0 100 100"><use href="#leaf"></use></svg></div></div>
+      <div class="depth l3" style="--z:2.8"><div class="float f1" style="color:#F7C32E"><svg viewBox="0 0 100 100"><use href="#leaf"></use></svg></div></div>
+    </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Paxta</span><i></i><span>Zig'ir</span><i></i><span>Jun</span><i></i><span>Yangi kelganlar</span><i></i><span>Kuz kolleksiyasi</span><i></i><span>Qish kolleksiyasi</span><i></i>
+      <span>Paxta</span><i></i><span>Zig'ir</span><i></i><span>Jun</span><i></i><span>Yangi kelganlar</span><i></i><span>Kuz kolleksiyasi</span><i></i><span>Qish kolleksiyasi</span><i></i>
+    </div>
+  </div>
+
+  <div class="wrap section">
+    <div class="section-head reveal"><h2 class="h2">Nima uchun Daraxtli?</h2><p class="muted">Kiyim tanlashda uchta narsa muhim: mato, andoza va xotirjam rang.</p></div>
+    <div class="feature-grid stagger">
+      <article class="feature"><span class="ficon" style="background:#CFE8D6;color:#17402A"><svg viewBox="0 0 100 100" width="30" height="30"><use href="#leaf"></use></svg></span><h3>Tabiiy matolar</h3><p>Teringizga yoqadigan paxta, zig'ir va jun. Yengil, nafas oladigan, uzoq xizmat qiladigan.</p></article>
+      <article class="feature"><span class="ficon" style="background:#F9D96B;color:#2B1D14"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M3 17 L17 3 L21 7 L7 21 Z M8 12 l2 2 M11 9 l2 2 M14 6 l2 2"></path></svg></span><h3>Qulay andoza</h3><p>Oversayz ham, klassik ham. Har bir model harakatga xalaqit bermaydigan qilib o'lchangan.</p></article>
+      <article class="feature"><span class="ficon" style="background:#D9CCF7;color:#2B1D14"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><path d="M3 7 L12 3 L21 7 V17 L12 21 L3 17 Z M3 7 L12 11 L21 7 M12 11 V21"></path></svg></span><h3>Tez yetkazish</h3><p>Buyurtmani tanlang, savatga qo'shing va uyingizgacha olib boramiz.</p></article>
+    </div>
+  </div>
+
+  <div class="wrap section">
+    <div class="section-head reveal"><h2 class="h2">Yangi kelganlar</h2><a class="link-arrow" href="#katalog">Hammasini ko'rish <span aria-hidden="true">&rarr;</span></a></div>
+    <div class="products" id="featured-grid"></div>
+  </div>
+
+  <div class="wrap section">
+    <div class="band band-sun reveal">
+      <div class="band-copy">
+        <span class="eyebrow">Kuz va qish</span>
+        <h2 class="h2">Issiq ranglar, yumshoq matolar.</h2>
+        <p>To'rt fasl uchun alohida kolleksiya. O'zingizga yoqqanini tanlang.</p>
+        <a class="btn btn-dark" href="#kolleksiya">Kolleksiyalarni ko'rish</a>
+      </div>
+      <div class="band-art" aria-hidden="true">
+        <svg viewBox="0 0 100 100" class="spin-slow"><use href="#leaf" style="color:#2F7D45"></use></svg>
+        <svg viewBox="0 0 100 100" class="spin-slow rev"><use href="#leaf" style="color:#5A3E2B"></use></svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap section">
+    <div class="section-head reveal"><h2 class="h2">Buyurtma qanday beriladi</h2></div>
+    <ol class="steps stagger">
+      <li><span class="step-n">1</span><h3>Tanlang</h3><p>Katalogdan model, rang va o'lchamni belgilang.</p></li>
+      <li><span class="step-n">2</span><h3>Savatga qo'shing</h3><p>Bir nechta mahsulotni birga buyurtma qilish mumkin.</p></li>
+      <li><span class="step-n">3</span><h3>Qabul qiling</h3><p>Biz bilan bog'lanamiz va kelishilgan joyga yetkazamiz.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 2. KATALOG -->
+<section class="view" id="view-katalog" data-title="Katalog">
+  <div class="wrap page-head">
+    <span class="pill fade-in" style="--d:0">Katalog</span>
+    <h1 class="display"><span class="word"><span style="--w:0">Hamma</span></span> <span class="word"><span style="--w:1">kiyimlar</span></span> <span class="word"><span style="--w:2">bir joyda</span></span></h1>
+    <p class="lead fade-in" style="--d:360">Toifani tanlang, nomi bo'yicha qidiring yoki narx bo'yicha saralang. Rang doirachalarini bosib, modelning boshqa rangini ko'ring.</p>
+  </div>
+  <div class="wrap">
+    <div class="toolbar reveal">
+      <div class="chips" role="group" aria-label="Toifalar">
+        <button class="chip active" type="button" data-cat="all">Hammasi</button>
+        <button class="chip" type="button" data-cat="ayol">Ayollar</button>
+        <button class="chip" type="button" data-cat="erkak">Erkaklar</button>
+        <button class="chip" type="button" data-cat="bolalar">Bolalar</button>
+        <button class="chip" type="button" data-cat="aks">Aksessuarlar</button>
+      </div>
+      <div class="tools-right">
+        <label class="field-inline" for="search"><span class="sr">Qidirish</span><input id="search" type="search" placeholder="Qidirish..." autocomplete="off"></label>
+        <label class="field-inline" for="sort"><span class="sr">Saralash</span>
+          <select id="sort"><option value="def">Odatiy tartib</option><option value="asc">Arzonidan</option><option value="desc">Qimmatidan</option></select>
+        </label>
+      </div>
+    </div>
+    <div class="count-line" id="catalog-count" aria-live="polite"></div>
+    <div class="products" id="catalog-grid"></div>
+    <div class="empty" id="catalog-empty" hidden><svg viewBox="0 0 100 100" width="64" height="64" style="color:#2F7D45"><use href="#leaf"></use></svg><p>Hech narsa topilmadi. Boshqa so'z yoki toifani sinab ko'ring.</p></div>
+  </div>
+</section>
+
+<!-- 3. KOLLEKSIYALAR -->
+<section class="view" id="view-kolleksiya" data-title="Kolleksiyalar">
+  <div class="wrap page-head">
+    <span class="pill fade-in" style="--d:0">Kolleksiyalar</span>
+    <h1 class="display"><span class="word"><span style="--w:0">To'rt</span></span> <span class="word"><span style="--w:1">fasl,</span></span> <span class="word"><span style="--w:2">to'rt</span></span> <span class="word"><span style="--w:3">kayfiyat</span></span></h1>
+    <p class="lead fade-in" style="--d:380">Faslni ustiga olib boring yoki bosing, u ochiladi.</p>
+  </div>
+  <div class="wrap">
+    <div class="panels reveal" id="panels">
+      <div class="panel active" tabindex="0" style="--bg:#CFE8D6;--fg:#17402A">
+        <span class="p-vert">Bahor</span>
+        <div class="p-body"><span class="eyebrow">Mart - may</span><h2 class="h2">Bahor</h2><p>Yengil zig'ir ko'ylaklar, och yashil va pushti tuslar, ochiq havoda kiyiladigan qatlamlar.</p><a class="btn btn-dark" href="#katalog">Katalogda ko'rish</a></div>
+        <svg class="p-art g" viewBox="0 0 100 100" aria-hidden="true"><use href="#g-dress"></use></svg>
+      </div>
+      <div class="panel" tabindex="0" style="--bg:#F7C32E;--fg:#2B1D14">
+        <span class="p-vert">Yoz</span>
+        <div class="p-body"><span class="eyebrow">Iyun - avgust</span><h2 class="h2">Yoz</h2><p>Paxtali futbolkalar, keng shimlar va quyoshdek sariq aksentlar. Issiqda ham qulay.</p><a class="btn btn-dark" href="#katalog">Katalogda ko'rish</a></div>
+        <svg class="p-art g" viewBox="0 0 100 100" aria-hidden="true"><use href="#g-tee"></use></svg>
+      </div>
+      <div class="panel" tabindex="0" style="--bg:#5A3E2B;--fg:#FBF7E8">
+        <span class="p-vert">Kuz</span>
+        <div class="p-body"><span class="eyebrow">Sentyabr - noyabr</span><h2 class="h2">Kuz</h2><p>Jigarrang, zaytun va xantal ranglar. Xudilar, yengil kurtkalar va trikotaj shimlar.</p><a class="btn btn-light" href="#katalog">Katalogda ko'rish</a></div>
+        <svg class="p-art g" viewBox="0 0 100 100" aria-hidden="true"><use href="#g-hoodie"></use></svg>
+      </div>
+      <div class="panel" tabindex="0" style="--bg:#17402A;--fg:#FBF7E8">
+        <span class="p-vert">Qish</span>
+        <div class="p-body"><span class="eyebrow">Dekabr - fevral</span><h2 class="h2">Qish</h2><p>Uzun jun paltolar, issiq shapkalar va chuqur o'rmon yashili. Sovuqda ham chiroyli.</p><a class="btn btn-sun" href="#katalog">Katalogda ko'rish</a></div>
+        <svg class="p-art g" viewBox="0 0 100 100" aria-hidden="true"><use href="#g-coat"></use></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. BIZ HAQIMIZDA -->
+<section class="view" id="view-biz" data-title="Biz haqimizda">
+  <div class="wrap page-head">
+    <span class="pill fade-in" style="--d:0">Biz haqimizda</span>
+    <h1 class="display"><span class="word"><span style="--w:0">Daraxt</span></span> <span class="word"><span style="--w:1">kabi:</span></span> <span class="word"><span style="--w:2">sekin</span></span> <span class="word"><span style="--w:3">va</span></span> <span class="word"><span style="--w:4">mustahkam</span></span></h1>
+  </div>
+  <div class="wrap about">
+    <div class="rings reveal" aria-hidden="true">
+      <svg viewBox="0 0 100 100" class="spin-slow">
+        <circle cx="50" cy="50" r="6" pathLength="1"></circle><circle cx="50" cy="50" r="14" pathLength="1"></circle><circle cx="50" cy="50" r="22" pathLength="1"></circle><circle cx="50" cy="50" r="30" pathLength="1"></circle><circle cx="50" cy="50" r="38" pathLength="1"></circle><circle cx="50" cy="50" r="46" pathLength="1"></circle>
+      </svg>
+    </div>
+    <div class="about-copy stagger">
+      <h2 class="h2">Nomimiz daraxtdan olingan</h2>
+      <p>Daraxt har yili yangi halqa qo'shadi: shoshilmaydi, lekin ishonchli o'sadi. Biz ham kiyimga shunday qaraymiz: bir mavsumlik shov-shuv emas, yillar davomida yoqadigan narsa.</p>
+      <p>Daraxtli Do'konda tabiiy matolar, aniq tikuv va xotirjam ranglar birinchi o'rinda turadi.</p>
+      <p class="muted">[Do'kon tarixi: qachon ochilgan, kim asos solgan, qayerda joylashgan. Shu yerga o'zingizning 2-3 jumlangizni yozing.]</p>
+    </div>
+  </div>
+  <div class="wrap section">
+    <div class="section-head reveal"><h2 class="h2">Biz ishonadigan uch narsa</h2></div>
+    <div class="values stagger">
+      <article class="value" style="--bg:#CFE8D6"><h3>Tabiiylik</h3><p>Teriga yoqimli, nafas oladigan matolar.</p></article>
+      <article class="value" style="--bg:#F9D96B"><h3>Sokinlik</h3><p>Ko'zni charchatmaydigan, bir-biriga mos ranglar.</p></article>
+      <article class="value" style="--bg:#D9CCF7"><h3>Aniqlik</h3><p>To'g'ri o'lcham, toza tikuv, halol xizmat.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 5. AKSIYA -->
+<section class="view" id="view-aksiya" data-title="Aksiya">
+  <div class="wrap page-head">
+    <span class="pill fade-in" style="--d:0">Aksiya</span>
+    <h1 class="display"><span class="word"><span style="--w:0">Mavsum</span></span> <span class="word"><span style="--w:1">chegirmalari</span></span></h1>
+    <p class="lead fade-in" style="--d:360">Aksiya shartlarini bu yerga yozasiz. Namuna sifatida uchta blok tayyorlangan.</p>
+  </div>
+  <div class="wrap">
+    <div class="offers stagger">
+      <article class="offer" style="--bg:#F7C32E;--fg:#2B1D14"><span class="eyebrow">Kuz kolleksiyasi</span><div class="offer-big">[foiz]%</div><p>Tanlangan xudi va kurtkalarga chegirma. [Muddatini yozing]</p><a class="btn btn-dark" href="#katalog">Ko'rish</a></article>
+      <article class="offer" style="--bg:#2F7D45;--fg:#FBF7E8"><span class="eyebrow">Ikkinchisiga</span><div class="offer-big">[foiz]%</div><p>Ikkinchi mahsulotga alohida chegirma. [Shartini yozing]</p><a class="btn btn-sun" href="#katalog">Ko'rish</a></article>
+      <article class="offer" style="--bg:#D9CCF7;--fg:#2B1D14"><span class="eyebrow">Yangi mijozlarga</span><div class="offer-big">[foiz]%</div><p>Birinchi buyurtmaga chegirma. [Shartini yozing]</p><a class="btn btn-dark" href="#aloqa">Bog'lanish</a></article>
+    </div>
+    <div class="ticket reveal">
+      <div><span class="eyebrow">Promokod</span><div class="ticket-code">[PROMOKOD]</div></div>
+      <p>Buyurtma berayotganda kodni ayting va chegirmani oling.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6. ALOQA -->
+<section class="view" id="view-aloqa" data-title="Aloqa">
+  <div class="wrap page-head">
+    <span class="pill fade-in" style="--d:0">Aloqa</span>
+    <h1 class="display"><span class="word"><span style="--w:0">Biz</span></span> <span class="word"><span style="--w:1">bilan</span></span> <span class="word"><span style="--w:2">bog'laning</span></span></h1>
+    <p class="lead fade-in" style="--d:360">Savolingiz yoki buyurtmangiz bo'lsa, yozing yoki do'konga keling.</p>
+  </div>
+  <div class="wrap contact">
+    <div class="contact-info stagger">
+      <div class="info-row"><span class="info-k">Manzil</span><span class="info-v">[Shahar, ko'cha, mo'ljal]</span></div>
+      <div class="info-row"><span class="info-k">Ish vaqti</span><span class="info-v">[Kunlar va soatlar]</span></div>
+      <div class="info-row"><span class="info-k">Telefon</span><span class="info-v">[+998 __ ___ __ __]</span></div>
+      <div class="info-row"><span class="info-k">Telegram</span><span class="info-v">[@foydalanuvchi_nomi]</span></div>
+      <div class="map" aria-hidden="true"><span class="map-grid"></span><span class="pin"></span><span class="map-label">[Xarita joyi]</span></div>
+    </div>
+    <form class="form reveal" id="contact-form" novalidate>
+      <h2 class="h3">Xabar yozing</h2>
+      <div class="field"><label for="f-name">Ismingiz</label><input id="f-name" name="name" type="text" autocomplete="name" placeholder="Ism"><span class="err" id="e-name"></span></div>
+      <div class="field"><label for="f-phone">Telefon raqamingiz</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+998"><span class="err" id="e-phone"></span></div>
+      <div class="field"><label for="f-msg">Xabar</label><textarea id="f-msg" name="msg" rows="4" placeholder="Qaysi mahsulot qiziqtirdi?"></textarea></div>
+      <button class="btn btn-primary" type="submit">Yuborish</button>
+      <p class="muted small">Namuna forma: hozircha xabar hech qayerga yuborilmaydi.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- Pastki qism -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-big" aria-hidden="true">Daraxtli</div>
+    <div class="foot-grid">
+      <div><div class="foot-h">Daraxtli Do'kon</div><p class="foot-p">Tabiat ranglaridagi zamonaviy kiyimlar.</p></div>
+      <div><div class="foot-h">Sahifalar</div><nav class="foot-links" aria-label="Pastki menyu"><a href="#bosh">Bosh sahifa</a><a href="#katalog">Katalog</a><a href="#kolleksiya">Kolleksiyalar</a><a href="#biz">Biz haqimizda</a><a href="#aksiya">Aksiya</a><a href="#aloqa">Aloqa</a></nav></div>
+      <div><div class="foot-h">Aloqa</div><p class="foot-p">[Manzil]<br>[Telefon]<br>[Telegram]</p></div>
+    </div>
+    <div class="foot-bottom">2026 Daraxtli Do'kon. Barcha huquqlar himoyalangan.</div>
+    <div class="credit"><svg viewBox="0 0 48 48" width="18" height="18" aria-hidden="true"><circle cx="24" cy="19" r="12" fill="#3E9457"></circle><rect x="21.5" y="27" width="5" height="15" rx="2.5" fill="#C9996B"></rect></svg><span>Created by fozilovvv</span></div>
+  </div>
+</footer>
+
+<!-- Savat -->
+<div class="overlay" id="overlay" data-close-cart></div>
+<aside class="cart" id="cart" aria-hidden="true" aria-label="Savat">
+  <div class="cart-head"><h2 class="h3">Savat</h2><button class="icon-btn" type="button" data-close-cart aria-label="Savatni yopish" id="cart-close"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 5 L19 19 M19 5 L5 19"></path></svg></button></div>
+  <div class="cart-list" id="cart-list"></div>
+  <div class="cart-foot"><div class="cart-total"><span>Jami</span><strong id="cart-total">0 so'm</strong></div><a class="btn btn-primary btn-block" href="#aloqa" data-close-cart>Buyurtma berish</a></div>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
